@@ -20,6 +20,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     @IBOutlet weak var optionsView: UIView!
     @IBOutlet weak var restaurantImage: UIImageView!
     @IBOutlet weak var restAddress: UILabel!
+    @IBOutlet weak var cameraButton: UIButton!
     
     var isOptionsViewShown = false
     var tappedMarker = GMSMarker()
@@ -92,6 +93,11 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         //opcijski view je hidean, pojavi se na marker tap
         self.optionsView.isHidden = true
         optionsView.center = CGPoint(x: (self.view.bounds.width/2), y: (self.view.bounds.height/2))
+        
+        if checkIfCameraIsAvailable() != true{
+            cameraButton.isEnabled = false
+            print("Can't use camera, it's unavailable")
+        }
 
     }
     
@@ -162,12 +168,15 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         print("Click on the image")
         performSegue(withIdentifier: "showImage", sender: self)
     }
+
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if (segue.identifier == "addPhoto"){
-        let cameraVC = segue.destination as! CameraViewController
-            cameraVC.callerMarker = tappedMarker}
+        if let cameraVC = segue.destination as? CameraViewController {
+                    cameraVC.callerMarker = tappedMarker}}
+   
         else if (segue.identifier == "showImage"){
         let showImageVC = segue.destination as! showImageViewController
         showImageVC.showImage = tappedMarkerImage
@@ -176,6 +185,16 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         let editDataVC = segue.destination as! editRestaurantViewController
         editDataVC.selectedMarker = tappedMarker
         }
+    }
+    
+    func checkIfCameraIsAvailable()->Bool{
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            return true
+        }
+        else{
+            return false
+        }
+        
     }
     
     func checkIfFirstRun(){

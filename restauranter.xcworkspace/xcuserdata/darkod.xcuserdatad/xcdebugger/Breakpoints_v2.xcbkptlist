@@ -26,12 +26,12 @@
                   moduleName = "restauranter"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/darkod/Documents/Developer/restauranter/restauranter/restJSON.swift"
-                  timestampString = "513450041.848105"
+                  timestampString = "513456666.494773"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,12 +41,12 @@
                   moduleName = "restauranter"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/darkod/Documents/Developer/restauranter/restauranter/restJSON.swift"
-                  timestampString = "513450041.85079"
+                  timestampString = "513456666.498957"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "restauranter/CameraViewController.swift"
-            timestampString = "513369741.981947"
+            timestampString = "513454854.768678"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "startCamera()"
             landmarkType = "7">
          </BreakpointContent>

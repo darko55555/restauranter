@@ -425,6 +425,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="6dI-ed-drg" id="XQP-6M-mzi"/>
                         <outlet property="mpView" destination="Tay-VB-VRq" id="n1N-m1-iDE"/>
                         <outlet property="optionsFooterView" destination="nF7-yq-uWw" id="Tf9-hB-ctY"/>
                         <outlet property="optionsView" destination="ejv-Dl-6eZ" id="NW9-11-Nco"/>

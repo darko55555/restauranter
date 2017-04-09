@@ -23,6 +23,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     let takePhoto = UIButton()
     let cdh = coreDataHandler()
     let stillImageOutput = AVCaptureStillImageOutput()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -241,6 +242,8 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         closeViewFinder()
     }
+
+    
     override var prefersStatusBarHidden: Bool {
         get {
             return true
