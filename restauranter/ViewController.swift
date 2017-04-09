@@ -50,8 +50,11 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     
     //array za restorane
     var restaurants = [Restaurant](){
+        willSet{
+            restaurants.removeAll()
+        }
         didSet{
-           print("Count restaurants = \(restaurants.count)")
+           print("Count restaurants in array= \(restaurants.count)")
            let restCount = restaurants.count
            addMarkers(restos: restaurants)
         }
@@ -153,7 +156,6 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         jsonHandler.fetchData() { (response) in
             let cdHandler = coreDataHandler()
             self.restaurants = cdHandler.loadCoreData()
-            
         }
 
         }
