@@ -65,7 +65,6 @@ class coreDataHandler: NSObject {
                 restaurants.append(res)
             }
             self.lastID = (restaurants.last?.id)!
-            print("Last id is \(self.lastID)")
             return restaurants
             
         }
