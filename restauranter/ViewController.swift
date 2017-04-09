@@ -125,7 +125,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     func addMarkers(restos: [Restaurant]){
 
         //google SDK zahtjeva da UI aktivnosti budu eksplicitno na main threadu
-         DispatchQueue.global(qos: .default).async {
+      DispatchQueue.main.async {
         for resto in restos{
             let marker = GMSMarker()
             let restLat = resto.latitude
@@ -133,7 +133,7 @@ class ViewController: UIViewController, GMSMapViewDelegate {
             marker.position = CLLocationCoordinate2D(latitude: CLLocationDegrees(restLat), longitude: CLLocationDegrees(restLon))
             marker.map = self.mpView
             marker.userData = resto
-            }}
+        }}
    
         
     }

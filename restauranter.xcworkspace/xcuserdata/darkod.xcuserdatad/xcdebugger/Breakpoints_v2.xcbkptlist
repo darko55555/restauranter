@@ -26,12 +26,12 @@
                   moduleName = "restauranter"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/darkod/Documents/Developer/restauranter/restauranter/restJSON.swift"
-                  timestampString = "513431515.00819"
+                  timestampString = "513450041.848105"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,12 +41,12 @@
                   moduleName = "restauranter"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/darkod/Documents/Developer/restauranter/restauranter/restJSON.swift"
-                  timestampString = "513431515.009788"
+                  timestampString = "513450041.85079"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "4">
                </Location>
             </Locations>
          </BreakpointContent>
